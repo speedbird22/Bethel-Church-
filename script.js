@@ -86,3 +86,27 @@ window.addEventListener('scroll', function () {
     if (link.getAttribute('href') === '#' + current) link.classList.add('active-link');
   });
 });
+
+/* ---- Branch Tabs — Services Section ---- */
+var serviceTabs = document.querySelectorAll('#branchTabs .branch-tab');
+serviceTabs.forEach(function (tab) {
+  tab.addEventListener('click', function () {
+    serviceTabs.forEach(function (t) { t.classList.remove('active'); });
+    tab.classList.add('active');
+    var branch = tab.getAttribute('data-branch');
+    document.getElementById('branchYelahanka').style.display = branch === 'yelahanka' ? '' : 'none';
+    document.getElementById('branchKempapura').style.display = branch === 'kempapura' ? '' : 'none';
+  });
+});
+
+/* ---- Branch Tabs — Location Section ---- */
+var locTabs = document.querySelectorAll('#locBranchTabs .branch-tab');
+locTabs.forEach(function (tab) {
+  tab.addEventListener('click', function () {
+    locTabs.forEach(function (t) { t.classList.remove('active'); });
+    tab.classList.add('active');
+    var loc = tab.getAttribute('data-loc');
+    document.getElementById('locYelahanka').style.display = loc === 'yelahanka' ? '' : 'none';
+    document.getElementById('locKempapura').style.display = loc === 'kempapura' ? '' : 'none';
+  });
+});
