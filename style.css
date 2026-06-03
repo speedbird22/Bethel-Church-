@@ -188,6 +188,28 @@ img{max-width:100%;display:block;}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 
+/* SVG ICONS */
+.icon{display:inline-block;vertical-align:middle;fill:currentColor;flex-shrink:0;transition:fill 0.2s;}
+.icon--xs{width:13px;height:13px;}
+.icon--sm{width:16px;height:16px;}
+.icon--md{width:20px;height:20px;}
+.icon--lg{width:26px;height:26px;}
+.icon--xl{width:36px;height:36px;}
+.btn .icon{margin-right:7px;margin-top:-1px;}
+.pillar-icon .icon{width:18px;height:18px;}
+.loc-icon .icon{width:22px;height:22px;}
+.contact-card-icon .icon{width:34px;height:34px;}
+.footer-cross .icon{width:18px;height:18px;fill:#c0392b;}
+/* BRANCH TABS */
+.branch-tabs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;}
+.branch-tab{background:rgba(255,255,255,0.06);border:1.5px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.55);font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;padding:10px 22px;border-radius:30px;cursor:pointer;transition:all 0.25s;letter-spacing:0.04em;}
+.branch-tab:hover{border-color:rgba(192,57,43,0.6);color:#fff;}
+.branch-tab.active{background:#c0392b;border-color:#c0392b;color:#fff;}
+/* Branch tabs inside white section */
+.section-white .branch-tab{background:#f5f5f5;border-color:#ddd;color:#777;}
+.section-white .branch-tab:hover{border-color:#c0392b;color:#c0392b;}
+.section-white .branch-tab.active{background:#c0392b;border-color:#c0392b;color:#fff;}
+
 /* RESPONSIVE */
 @media(max-width:900px){
   .about-layout{grid-template-columns:1fr;gap:36px;}
